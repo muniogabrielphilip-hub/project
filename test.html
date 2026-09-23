@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Wifey Mikhaela ❤️</title>
+
+
+    <!-- ================= CSS ================= -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #570273;
+            color: white;
+            font-family: Georgia, serif;
+            overflow: hidden;
+        }
+
+        /* PAGE */
+
+        .page {
+            position: fixed;
+            inset: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            visibility: hidden;
+
+            transition: 1s ease;
+
+            background:
+                radial-gradient(circle,
+                    #9106BD,
+                    #620382,
+                    #3F0254);
+        }
+
+        .page.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* INTRO */
+
+        .intro-content {
+            text-align: center;
+        }
+
+        .intro-content h1 {
+            font-size: 60px;
+            margin: 20px;
+        }
+
+        .intro-content h1 span {
+            color: #460F63;
+        }
+
+        .intro-content p {
+            font-size: 20px;
+        }
+
+
+        /* BUTTON */
+
+        button {
+            margin-top: 30px;
+
+            padding: 15px 30px;
+
+            border: none;
+
+            background: #B158ED;
+            color: white;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            border-radius: 5px;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+
+            background: #D6ABED;
+
+            box-shadow:
+                0 0 25px #BD75EB;
+        }
+
+
+        /* LETTER */
+
+        .letter-container {
+            width: 90%;
+            max-width: 750px;
+
+            max-height: 90vh;
+
+            overflow-y: auto;
+        }
+
+        .letter {
+            background: #9E19E3;
+
+            padding: 50px;
+
+            border-radius: 10px;
+
+            line-height: 1.8;
+
+            box-shadow:
+                0 0 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .letter h2 {
+            margin-bottom: 25px;
+
+            color: #ffdce2;
+        }
+
+        .letter p {
+            margin-bottom: 20px;
+
+            color: #ffe7ea;
+        }
+
+
+        /* VALENTINE */
+
+        .valentine-content {
+            text-align: center;
+        }
+
+        .valentine-content h1 {
+            font-size: 50px;
+        }
+
+        .big-heart {
+            font-size: 100px;
+
+            margin: 40px;
+
+            animation: heartbeat 1.2s infinite;
+
+            filter:
+                drop-shadow(0 0 20px #ff4963);
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+        }
+
+
+        /* YES */
+
+        .yes-content {
+            text-align: center;
+        }
+
+        .yes-content h1 {
+            font-size: 70px;
+
+            color: #ffd8df;
+
+            text-shadow:
+                0 0 20px #ff4963;
+        }
+
+        .yes-content p {
+            margin-top: 20px;
+
+            font-size: 20px;
+        }
+
+
+        /* FLOATING HEARTS */
+
+        #hearts {
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            overflow: hidden;
+
+            z-index: 100;
+        }
+
+        .floating-heart {
+            position: absolute;
+
+            bottom: -50px;
+
+            animation: floatUp linear forwards;
+        }
+
+        @keyframes floatUp {
+
+            from {
+                transform:
+                    translateY(0) rotate(0deg);
+
+                opacity: 1;
+            }
+
+            to {
+                transform:
+                    translateY(-110vh) rotate(360deg);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* MOBILE */
+
+        @media(max-width:600px) {
+
+            .intro-content h1 {
+                font-size: 40px;
+            }
+
+            .valentine-content h1 {
+                font-size: 30px;
+            }
+
+            .yes-content h1 {
+                font-size: 45px;
+            }
+
+            .letter {
+                padding: 25px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- FLOATING HEARTS -->
+
+    <div id="hearts"></div>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section id="intro" class="page active">
+
+        <div class="intro-content">
+
+            <p>
+                A little something from your IT boyfriend(husband)...
+            </p>
+
+            <h1>
+                For <span>Mikhaela</span> ❤️
+            </h1>
+
+            <p>
+                I made something special for you.
+            </p>
+
+            <button onclick="showLetter()">
+                OPEN MY LETTER 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LETTER ================= -->
+
+    <section id="letter" class="page">
+
+        <div class="letter-container">
+
+            <div class="letter">
+
+                <h2>
+                    Dear MikMik(My Wifey),
+                </h2>
+
+                <p>
+
+                    Happy 2nd monthsary!
+                </p>
+
+                <p>I sat down to type this po hehe, and to be completely honest, I didn't even know where to begin
+                    because there
+                    is so much in my heart that I want to tell you. Two months might seem like a short period of
+                    time to
+                    anyone looking from the outside, but to me, these past days where we've been together have felt so
+                    deeply
+                    significant. It
+                    feels like time is simultaneously flying by in a blur of pure happiness and standing
+                    completely still
+                    every single moment I get to spend with you.
+                </p>
+
+                <p>Before you came into my life, I had my own routines, my own pace, and my own little world.
+                    But looking
+                    back now, it feels as though a bright, warm light was turned on the second you walked into
+                    it. You
+                    didn’t just enter my life wifeyy you transformed it in the most beautiful ways that only you
+                    can.
+                    Everything feels clearer, brighter, and infinitely more meaningful now because I get to
+                    share it with
+                    you.
+                </p>
+
+                <p>I want to use today to thank you for everything you are and everything you bring into my
+                    world. Thank
+                    you for the way you listen to me, not just hearing my words, but truly understanding where
+                    I’m coming
+                    from. Thank you for your kindness, your warmth, and the gentle comfort you give me whenever
+                    I need it
+                    most. With you, I don't ever feel like I have to hide my flaws, or pretend like I am okay, or try to
+                    be
+                    someone I’m
+                    not. Being around you feels as effortless as breathing, and that kind of peace is something
+                    I have never
+                    taken for granted for a single day.
+                </p>
+
+                <p>I love the memories we’re building together, the big, special moments, but even more so, the
+                    little quiet
+                    ones in between. I love our jokes, our chikas and every funny moments we share hehe, the way we can
+                    make each other laugh over the
+                    smallest things,
+                    the random messages throughout the day, and those comfortable silences where we don't even
+                    need to say
+                    anything at all just to feel close. You have this incredible, natural ability to make my
+                    hardest days
+                    feel manageable and light and making my best days feel completely unforgettable. Just knowing that
+                    you’re in
+                    my life po,
+                    gives me a sense of strength and happiness I didn't know I was missing.
+                </p>
+
+                <p>These past two months have shown me what it really means to have a true partner, someone who
+                    cares
+                    deeply, supports unconditionally, and brings out the absolute best in me. I catch myself
+                    smiling at
+                    random times during the day just thinking about you, or re-reading your messages especially your
+                    pics in my Photos sa phone because
+                    they bring such
+                    an overwhelming sense of gratitude to my chest. Like basta wifeyy I don't know how to explain how
+                    greatful I am to have you in my life.
+                </p>
+
+                <p>As we celebrate our second month together, I want you to know how deeply I appreciate, value,
+                    and love
+                    you. Two months is just the very beginning of our story, but it has already been one of the
+                    most
+                    beautiful chapters of my life. I am so excited for all the months ahead of us, for all the
+                    experiences and moments we will create, the challenges we'll overcome together, the quiet moments
+                    we'll share, and the happiness
+                    we have yet
+                    to build.
+                </p>
+
+                <p>Thank you for choosing me, for staying by my side, and for giving me your heart. Happy 2nd
+                    monthsary, my
+                    wifeyy. Here’s to us, and to everything yet to come.
+                </p>
+
+
+
+                <p>
+                    So in celebrating our 2nd Monthsary, I made you this little surprise, just for you, just from
+                    me, because you deserve to feel extraordinary
+                    as you truly are.
+                    I love you always my mikmik.
+                </p>
+
+                <p>
+                    ❤️
+                </p>
+
+                <p>
+                    Forever yours,<br>
+                    <strong>GABGAB 🌹</strong>
+                </p>
+
+
+                <button onclick="showValentine()">
+                    CONTINUE ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MONTHSARY ================= -->
+
+    <section id="valentine" class="page">
+
+        <div class="valentine-content">
+
+            <h1>
+                WILL YOU CELEBRATE 2 MONTHS WITH ME?
+            </h1>
+
+            <p>
+                Because this heart only beats for you, Mik. 🌹
+            </p>
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <button onclick="sayYes()">
+                PLEASE JUST CLICK ME 💕🥺
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= YES ================= -->
+
+    <section id="yesPage" class="page">
+
+        <div class="yes-content">
+
+            <div style="font-size:60px;">
+                ❤️ 💕 💗
+            </div>
+
+            <h1>
+                SHE SAID YES! 🎉
+            </h1>
+
+            <p>
+                You've made me more than happy, Mik.
+                So here's 2 months to us both...
+            </p>
+
+            <p>
+                — gabgab loves you so much 🌹
+            </p>
+
+            <p>
+                I Love You So Much Mikhaela Danielle Angela N. Munio
+            </p>
+
+            <style>
+                img {
+                    border: 3px solid white;
+                }
+            </style>
+            <div class="gallery">
+                <img src="mpics/m1.jfif" alt="m1" width="200">
+                <img src="mpics/m2.jfif" alt="m2" width="200">
+                <img src="mpics/m3.jfif" alt="m3" width="200">
+                <img src="mpics/m4.jfif" alt="m4" width="200">
+                <img src="mpics/m5.jfif" alt="m5" width="200">
+                <img src="mpics/m6.jfif" alt="m6" width="200">
+                <img src="mpics/m7.jfif" alt="m7" width="200">
+                <img src="mpics/m8.jfif" alt="m8" width="200">
+            </div>
+            <p>
+                mga cutie pics nimo pretty julditaa mwehehehehe...
+            </p>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* PAGE TRANSITION */
+
+        function changePage(current, next) {
+
+            document
+                .getElementById(current)
+                .classList.remove("active");
+
+            setTimeout(function () {
+
+                document
+                    .getElementById(next)
+                    .classList.add("active");
+
+            }, 300);
+
+        }
+
+
+        /* OPEN LETTER */
+
+        function showLetter() {
+
+            changePage("intro", "letter");
+
+        }
+
+
+        /* CONTINUE */
+
+        function showValentine() {
+
+            changePage("letter", "valentine");
+
+        }
+
+
+        /* YES */
+
+        function sayYes() {
+
+            changePage("valentine", "yesPage");
+
+            celebration();
+
+        }
+
+
+        /* FLOATING HEARTS */
+
+        const hearts =
+            document.getElementById("hearts");
+
+
+        const symbols = [
+            "❤️",
+            "💕",
+            "💗",
+            "💖",
+            "💘",
+            "🌹"
+        ];
+
+
+        function createHeart() {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className =
+                "floating-heart";
+
+            heart.innerHTML =
+                symbols[
+                Math.floor(
+                    Math.random() * symbols.length
+                )
+                ];
+
+            heart.style.left =
+                Math.random() * 100 + "%";
+
+            heart.style.fontSize =
+                Math.random() * 25 + 15 + "px";
+
+            const duration =
+                Math.random() * 4 + 4;
+
+            heart.style.animationDuration =
+                duration + "s";
+
+            hearts.appendChild(heart);
+
+
+            setTimeout(function () {
+
+                heart.remove();
+
+            }, duration * 1000);
+
+        }
+
+
+        /* CREATE HEARTS */
+
+        setInterval(createHeart, 700);
+
+
+        /* CELEBRATION */
+
+        function celebration() {
+
+            for (let i = 0; i < 40; i++) {
+
+                setTimeout(function () {
+
+                    createHeart();
+
+                }, i * 100);
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
